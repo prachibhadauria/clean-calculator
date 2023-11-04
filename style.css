@@ -1,0 +1,99 @@
+/* Responsive CSS */
+
+@media screen and (max-width: 576px) {
+  body {
+    font-size: 16px;
+  }
+
+  input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+body {
+  background: #ededed;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+}
+
+form {
+  margin: auto;
+  padding: 20px;
+  border-radius: 12px;
+  background: #ededed;
+  box-shadow: 11px 11px 26px #d1d1d1, -11px -11px 26px #ffffff;
+  max-width: 240px;
+  overflow: hidden;
+}
+
+#result {
+  font-size: 30px;
+  text-align: right;
+  font-family: monospace;
+  max-width: 220px;
+  width: 100%;
+  /* border: 2px solid #d5d5d5; */
+  /* background: #fff !important;
+  box-shadow: none !important; */
+  border-radius: 8px !important;
+  padding: 5px 10px !important;
+  color: #646464;
+  background: #ededed !important;
+  box-shadow: inset 5px 5px 10px #c7c7c7,
+  inset -5px -5px 10px #ffffff !important;
+  border: none !important;
+}
+
+input {
+  border-radius: 10px;
+  background: linear-gradient(145deg, #d5d5d5, #fefefe);
+  box-shadow: 5px 5px 10px #d1d1d1, -5px -5px 10px #ffffff;
+  border: none;
+  font-size: 18px;
+  padding: 15px 20px;
+  flex: calc(25% - 10px);
+  color: #646464;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+input:active {
+  box-shadow: inset 5px 5px 10px #c7c7c7,inset -5px -5px 10px #ffffff;
+  transition: all 0.2s ease-in-out;
+}
+
+.control-group {
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+input[value="/"], input[value="-"], input[value="+"], input[value="x"] {
+  color: #fd5a25;
+}
+input[value="="]{
+  background: linear-gradient(145deg, #c43c0f, #fe7847)!important;
+  color: #fff;
+}
+input[value="="]:active{
+  box-shadow: inset 5px 5px 10px #c43c0f,inset -5px -5px 10px #fe7847!important;
+}
+input[value="C"]{
+  background: linear-gradient(145deg, #111111, #626262)!important;
+  color: #fff;
+}
+input[value="C"]:active{
+  box-shadow: inset 5px 5px 10px #111111,inset -5px -5px 10px #626262!important;
+}
